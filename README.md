@@ -29,3 +29,4 @@ user uuid id şifreleme, şifre'de sha-256 kullanılmıştır
 ### Contributors
 Ömer Faruk Kumral : [email](thekumral.44@gmail.com)
 Ruveyda Kışla:[email](ruveydakisla34@gmail.com)
+Osman Utku SERİN : [email](osman.utku2828@gmail.com)
