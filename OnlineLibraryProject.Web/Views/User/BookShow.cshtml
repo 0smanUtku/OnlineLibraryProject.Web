@@ -1,0 +1,104 @@
+﻿@using EntityLayer.Concrete
+@{
+    ViewData["Title"] = "BookShow";
+}
+@model Book
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>@Model.Name</h2>                       
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Gallery Single Section ======= -->
+    <section id="gallery-single" class="gallery-single">
+      <div class="container">
+
+        <div class="position-relative h-100">
+          <div class="slides-1 portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="@Model.BookImage" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>@Model.Name</h2>
+              <p>
+                @Model.Bookinfo
+              </p>
+              
+
+              <div class="testimonial-item">
+                <p>
+                  @*<i class="bi bi-quote quote-icon-left"></i>
+                  @Model.author.AuthorQuintessence
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>*@
+                <div>
+                  
+                  @*<h3>@Model.author.AuthorName</h3>*@
+                  <h4>Yazar</h4>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="portfolio-info">
+              <h3>Kitap Bilgileri</h3>
+              <ul>
+                <li><strong>Stok</strong> <span>@Model.Stock</span></li>
+                <li><strong>Basım Yılı</strong> <span>@Model.Year</span></li>
+                <li><strong>Sayfa Sayısı</strong> <span>@Model.PageNumber</span></li>
+                <li><strong>Kitap Kategorisi</strong><span>@Model.BookCategory</span> </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+   
+
+
+
+  
+</body>
+
+</html>
+
